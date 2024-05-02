@@ -7,17 +7,17 @@
     }
     else
     {
-        <div class="portfolio-hero">
+        <div class="portfolio-hero font-bold">
             @if (hero is not null)
             {
                 <img src="@(hero.Src)" style="height: 90%; width: 100%; object-fit: cover;" 
                     alt="@(hero.Alt)" />
             }
         </div>
-        <div class="container">
+        <div class="container animate-pulse">
             @foreach (var project in projects)
             {
-                <div class="box" key="@project.Title">
+                <div class="box bg-blue-500" key="@project.Title">
                     <a href="@project.Url" target="_blank" rel="noopener noreferrer">
                         <h3 style="flex-basis: 40px;">@project.Title</h3>
                     </a>
